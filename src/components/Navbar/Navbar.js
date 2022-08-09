@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
@@ -22,41 +23,71 @@ const Navbar = ({ theme, setTheme }) => {
 
   return (
     <nav>
-      <a
-        href="/#"
+      <Link
+        href="#"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+        activeClass="active"
       >
         <AiOutlineHome />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
+        to="about"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+        activeClass="active"
       >
         <AiOutlineUser />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#experience"
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
+        to="experience"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+        activeClass="active"
       >
         <BiBook />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#services"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
+        to="services"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+        activeClass="active"
       >
         <RiServiceLine />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+        activeClass="active"
       >
         <MdOutlineConnectWithoutContact />
-      </a>
+      </Link>
       {theme === "dark-theme" ? (
         <button onClick={toggleTheme}>
           <BsSun />

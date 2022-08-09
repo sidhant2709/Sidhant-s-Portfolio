@@ -44,7 +44,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 64.5%;
 }
 
 ::-webkit-scrollbar {
@@ -154,7 +153,9 @@ img {
   .container {
     width: var(--container-width-sm);
   }
-
+  html {
+    font-size: 64.5%;
+  }
   .section {
     margin-bottom: 2rem;
   }

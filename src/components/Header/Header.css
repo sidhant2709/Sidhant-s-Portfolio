@@ -41,16 +41,34 @@ header {
 /* =========================== MY PHOTO ========================= */
 
 .my__photo {
-    background: linear-gradient(to bottom right, var(--color-primary), var(--color-bg));
-    width: 24rem;
-    height: 30rem;
+    width: 22rem;
+    height: 25.5rem;
     position: absolute;
-    left: calc(50% - 12rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
     overflow: hidden;
-    padding-top: 3.2rem;
+    padding-top: 2rem;
 }
+
+.my__photo img {
+    display: block;
+    max-width: 100%;
+}
+
+.my__photo svg {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    width: 27rem;
+    height: 32rem;
+    z-index: -1;
+}
+
+.my__photo img:hover {
+    transform: rotate(10deg);
+}
+
+
 
 /* =========================== SCROLL DOWN ========================= */
 
@@ -62,6 +80,7 @@ header {
     font-weight: 300;
     font-size: 0.9rem;
 }
+
 .scroll__down::before {
     content: "\25b2";
     position: absolute;
@@ -70,7 +89,7 @@ header {
     height: 0px;
     transform: rotate(90deg);
     right: -1.5rem;
-    bottom: 11.5px;
+    bottom: 17.5px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,10 +103,39 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        padding-top: 4rem;
     }
 
     .header__socials,
     .scroll__down {
         display: none;
+    }
+
+    .my__photo {
+        width: 30rem;
+        height: 39rem;
+        left: calc(50% - 15rem);
+    }
+
+    .my__photo svg {
+        position: absolute;
+        top: 0;
+        left: -5rem;
+        width: 40rem;
+        height: 38rem;
+        z-index: -1;
+    }
+
+    .my__photo img {
+        width: 30rem;
+        height: 38rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
     }
 }
