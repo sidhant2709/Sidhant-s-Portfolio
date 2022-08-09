@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
 header {
     height: 100vh;
     padding-top: 7rem;
@@ -17,6 +19,17 @@ header {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    position: absolute;
+    top: 80%;
+    left:50%;
+    transform: translateX(-40%) translateY(-50%);
+}
+
+.position{
+    position: absolute;
+    top: 75%;
+    left:53%;
+    transform: translateX(-45%) translateY(-50%);
 }
 
 /* =========================== HEADER SOCIALS ========================= */
@@ -42,12 +55,10 @@ header {
 
 .my__photo {
     width: 22rem;
-    height: 25.5rem;
+    height: 26rem;
     position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 2rem;
+    left: calc(50% - 10rem);
     overflow: hidden;
-    padding-top: 2rem;
 }
 
 .my__photo img {
@@ -65,9 +76,34 @@ header {
 }
 
 .my__photo img:hover {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
 }
 
+.title__h4{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: right;
+    color: rgb(0, 255, 166);
+    position: absolute;
+    top: 20.59rem;
+    right: 8rem;
+    transform: rotate(-20deg);
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.title{
+    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.title__2{
+    top: 3rem;
+    left: 5rem;
+    transform: translateY(-10px);
+    position: absolute;
+    height: 4rem;
+    z-index: -10;
+}
 
 
 /* =========================== SCROLL DOWN ========================= */
@@ -118,12 +154,9 @@ header {
     }
 
     .my__photo svg {
-        position: absolute;
-        top: 0;
         left: -5rem;
         width: 40rem;
         height: 38rem;
-        z-index: -1;
     }
 
     .my__photo img {
@@ -131,11 +164,35 @@ header {
         height: 38rem;
     }
 
+    .title__h4{
+        font-size: 3rem;
+        top: 31rem;
+        right: 12rem;
+    }
+
+    .title__2{
+        top: 4.8rem;
+        left: 7rem;
+        height: 5.5rem;
+    }
+
+    .header__buttons {
+        top: 70%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .position{
+        top: 65%;
+        left:53%;
+        transform: translateX(-55%) translateY(-50%);
+    }
+
     h1 {
         font-size: 3rem;
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }

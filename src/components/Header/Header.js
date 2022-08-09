@@ -3,18 +3,13 @@ import HeaderButtons from "./HeaderButtons";
 import "./Header.css";
 import myPhoto from "../../assets/Sid.png";
 import HeaderSocial from "./HeaderSocial";
-import { Link } from "react-scroll";
 
 const Header = () => {
   return (
     <header id="home">
       <div className="container header__container">
         <h4>Hello I'm</h4>
-        <h1>Sidhant Kumar Sahoo</h1>
-        <h4 className="text-light">Fullstack Developer</h4>
-        <HeaderButtons />
         <HeaderSocial />
-
         <div className="my__photo">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -24,20 +19,19 @@ const Header = () => {
             />
           </svg>
           <img src={myPhoto} alt="myPhoto" />
+          <h4 className="title__h4">
+            <span className="title">Sidhant</span>
+            <span className="title title__2">Sahoo</span>
+          </h4>
         </div>
-
-        <Link
+        <h4 className="text-light position">Fullstack Developer</h4>
+        <HeaderButtons />
+        <a
           href="#contact"
           className="scroll__down"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={1000}
-          activeClass="active"
         >
           Scroll Down
-        </Link>
+        </a>
       </div>
     </header>
   );
