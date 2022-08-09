@@ -7,7 +7,7 @@ nav {
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    top: 1rem;
     display: flex;
     gap: 0.8em;
     border-radius: 3rem;
@@ -16,7 +16,8 @@ nav {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+nav a,
+nav button {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -25,7 +26,8 @@ nav a {
     font-size: 1.1rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav button:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 

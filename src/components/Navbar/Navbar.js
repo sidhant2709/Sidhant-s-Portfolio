@@ -2,12 +2,23 @@ import React from "react";
 import "./Navbar.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
+import { BsSun } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
+
 import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const [activeNav, setActiveNav] = useState("#");
+
+  const toggleTheme = () => {
+    if (theme === "light-theme") {
+      setTheme("dark-theme");
+    } else {
+      setTheme("light-theme");
+    }
+  };
 
   return (
     <nav>
@@ -46,6 +57,15 @@ const Navbar = () => {
       >
         <MdOutlineConnectWithoutContact />
       </a>
+      {theme === "dark-theme" ? (
+        <button onClick={toggleTheme}>
+          <BsSun />
+        </button>
+      ) : (
+        <button onClick={toggleTheme}>
+          <MdDarkMode />
+        </button>
+      )}
     </nav>
   );
 };

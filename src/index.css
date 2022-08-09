@@ -11,18 +11,35 @@
 }
 
 :root {
-  --color-bg: #0b0b14;
+  /* --color-bg: #0b0b14;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-light: rgba(255, 255, 255, 0.6);
-  --color-white: #fff;
+  --color-white: #fff; */
 
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+}
+
+.dark-theme {
+  --color-bg: #0b0b14;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-white: #fff;
+}
+.light-theme {
+  --color-bg: #d1d1df;
+  --color-bg-variant: #141415;
+  --color-primary: #1f0300;
+  --color-primary-variant: rgba(2, 18, 29, 0.4);
+  --color-light: rgba(24, 3, 0, 0.681);
+  --color-white: rgb(0, 0, 0);
 }
 
 html {
@@ -39,7 +56,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /* =======================================GENERAL STYLES============================================== */
@@ -90,6 +107,7 @@ a:hover {
   color: var(--color-white);
 }
 
+
 .btn {
   width: max-content;
   display: inline-block;
@@ -113,9 +131,9 @@ a:hover {
 }
 
 img {
-  display: block;
-  width: 100%;
   object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* ===========================MEDIA QUERIES (MEDIUM DEVICES)==================================== */
