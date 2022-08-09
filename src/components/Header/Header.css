@@ -62,7 +62,16 @@ header {
     font-weight: 300;
     font-size: 0.9rem;
 }
-
+.scroll__down::before {
+    content: "\25b2";
+    position: absolute;
+    background: var(--color-primary);
+    width: 1px;
+    height: 0px;
+    transform: rotate(90deg);
+    right: -1.5rem;
+    bottom: 11.5px;
+}
 
 @media screen and (max-width: 1024px) {
     header {

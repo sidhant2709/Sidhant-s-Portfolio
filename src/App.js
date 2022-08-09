@@ -13,8 +13,6 @@ import { getStorageTheme } from "./utils/theme";
 const App = () => {
   const [theme, setTheme] = useState(getStorageTheme());
 
-
-
   useEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem('theme', theme);
