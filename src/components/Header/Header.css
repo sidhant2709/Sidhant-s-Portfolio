@@ -80,24 +80,30 @@ header {
 .my-name h4{
     font-size: 2rem;
     font-weight: 300;
-    color: #f6e646fa;
+    color: #f61111fa;
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .first-name{
     position: absolute;
     border-radius: 10px;
-    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
-    padding: 0.1rem;
+    padding: 0.2rem;
+    background-image: linear-gradient(to right bottom, rgba( 208, 204, 204, 0.8 ), rgba( 77, 181, 255, 0.6 ));
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 .last-name{
     position: absolute;
     border-radius: 10px;
-    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
     top: 2.8rem;
     left: 4rem;
-    padding: 0.1rem;
+    padding: 0.2rem;
     z-index: -1;
+    background-image: linear-gradient(to right bottom, rgba( 208, 204, 204, 0.8 ), rgba( 77, 181, 255, 0.6 ));
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 
