@@ -8,7 +8,6 @@ header {
 
 .header__container {
     text-align: center;
-    height: 100%;
     position: relative;
 }
 
@@ -19,17 +18,6 @@ header {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-    position: absolute;
-    top: 80%;
-    left:50%;
-    transform: translateX(-40%) translateY(-50%);
-}
-
-.position{
-    position: absolute;
-    top: 75%;
-    left:53%;
-    transform: translateX(-45%) translateY(-50%);
 }
 
 /* =========================== HEADER SOCIALS ========================= */
@@ -53,56 +41,63 @@ header {
 
 /* =========================== MY PHOTO ========================= */
 
-.my__photo {
+.my__photo{
     width: 22rem;
-    height: 26rem;
-    position: absolute;
-    left: calc(50% - 10rem);
-    overflow: hidden;
-}
-
-.my__photo img {
-    display: block;
-    max-width: 100%;
-}
-
-.my__photo svg {
-    position: absolute;
+    height: 30rem;
+    position: relative;
     top: 0;
-    left: -2rem;
-    width: 27rem;
-    height: 32rem;
-    z-index: -1;
+    left: 0;
+    margin: auto;
 }
 
-.my__photo img:hover {
-    transform: rotate(5deg);
+.my__background{
+    height: 27.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-.title__h4{
+.my__photo-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: var(--transition);
+}
+
+.my__photo-background:hover{
+    transform: rotate(8deg);
+    transition: var(--transition);
+}
+
+.my-name{
+    position: absolute;
+    border-radius: 10px;
+    top: 21rem;
+    left: 6rem;
+    transform: rotate(-20deg);
+}
+
+.my-name h4{
     font-size: 2rem;
     font-weight: 300;
-    text-align: right;
-    color: rgb(0, 255, 166);
-    position: absolute;
-    top: 20.59rem;
-    right: 8rem;
-    transform: rotate(-20deg);
+    color: #f6e646fa;
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-.title{
-    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
-    border-radius: 10px;
-    padding: 0.5rem;
-}
-.title__2{
-    top: 3rem;
-    left: 5rem;
-    transform: translateY(-10px);
+.first-name{
     position: absolute;
-    height: 4rem;
-    z-index: -10;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
+    padding: 0.1rem;
+}
+.last-name{
+    position: absolute;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #0b0b14, #4db5ff);
+    top: 2.8rem;
+    left: 4rem;
+    padding: 0.1rem;
+    z-index: -1;
 }
 
 
@@ -147,49 +142,27 @@ header {
         display: none;
     }
 
-    .my__photo {
+    .my__photo{
+        margin-bottom: 6rem;
+        margin-top: 2rem;
         width: 30rem;
-        height: 39rem;
-        left: calc(50% - 15rem);
+        height: 35rem;
     }
 
-    .my__photo svg {
-        left: -5rem;
-        width: 40rem;
-        height: 38rem;
+    .my__background{
+        height: 40rem;
+    }
+    .my-name{
+        top: 32rem;
+        left: 8rem;
     }
 
-    .my__photo img {
-        width: 30rem;
-        height: 38rem;
-    }
-
-    .title__h4{
+    .my-name h4{
         font-size: 3rem;
-        top: 31rem;
-        right: 12rem;
     }
-
-    .title__2{
-        top: 4.8rem;
-        left: 7rem;
-        height: 5.5rem;
-    }
-
-    .header__buttons {
-        top: 70%;
-        left:50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .position{
-        top: 65%;
-        left:53%;
-        transform: translateX(-55%) translateY(-50%);
-    }
-
-    h1 {
-        font-size: 3rem;
+    .last-name{
+        top: 4rem;
+        left: 6rem;
     }
 
     h4 {
