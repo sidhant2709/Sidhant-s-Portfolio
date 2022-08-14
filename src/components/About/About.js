@@ -8,8 +8,10 @@ import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <div className="about-title">
+        <h5>Get To Know</h5>
+        <h2>About Me</h2>
+      </div>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -35,9 +37,15 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nisi cumque tempore eligendi, perspiciatis impedit exercitationem harum? Aut exercitationem perferendis neque! Ut possimus voluptatum quo veniam voluptas, assumenda perspiciatis accusantium!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus nisi cumque tempore eligendi, perspiciatis impedit
+            exercitationem harum? Aut exercitationem perferendis neque! Ut
+            possimus voluptatum quo veniam voluptas, assumenda perspiciatis
+            accusantium!
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
