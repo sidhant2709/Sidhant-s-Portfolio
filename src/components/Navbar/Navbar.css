@@ -17,7 +17,6 @@ nav {
 
 @media screen and (max-width: 600px) {
     nav {
-        z-index: 2;
         left: 50%;
         transform: translate(-50%,-50%);
         top: 95%;
