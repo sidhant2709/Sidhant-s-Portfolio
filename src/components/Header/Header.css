@@ -2,7 +2,7 @@
 
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 0rem;
 }
 
 .header__socials::after {
@@ -41,7 +41,7 @@ header {
 
 /* =========================== MY PHOTO ========================= */
 
-.my__photo{
+.my__photo {
     width: 22rem;
     height: 30rem;
     position: relative;
@@ -50,26 +50,26 @@ header {
     margin: auto;
 }
 
-.my__background{
+.my__background {
     height: 27.5rem;
     position: relative;
     top: 0;
     left: 0;
 }
 
-.my__photo-background{
+.my__photo-background {
     position: absolute;
     top: 0px;
     left: 0px;
     transition: var(--transition);
 }
 
-.my__photo-background:hover{
+.my__photo-background:hover {
     transform: rotate(8deg);
     transition: var(--transition);
 }
 
-.my-name{
+.my-name {
     position: absolute;
     border-radius: 10px;
     top: 21rem;
@@ -77,33 +77,35 @@ header {
     transform: rotate(-20deg);
 }
 
-.my-name h4{
+.my-name h4 {
     font-size: 2rem;
     font-weight: 300;
     color: #f61111fa;
     font-family: 'Oleo Script Swash Caps', cursive;
 }
+
 /* sidhant */
-.first-name{
+.first-name {
     position: absolute;
     border-radius: 10px;
     padding: 0.2rem;
-    background-image: linear-gradient(to right bottom, rgba( 208, 204, 204, 0.8 ), rgba( 77, 181, 255, 0.6 ));
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background-image: linear-gradient(to right bottom, rgba(208, 204, 204, 0.8), rgba(77, 181, 255, 0.6));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
-.last-name{
+
+.last-name {
     position: absolute;
     border-radius: 10px;
     top: 2.8rem;
     left: 4rem;
     padding: 0.2rem;
     z-index: -1;
-    background-image: linear-gradient(to right bottom, rgba( 208, 204, 204, 0.8 ), rgba( 77, 181, 255, 0.6 ));
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background-image: linear-gradient(to right bottom, rgba(208, 204, 204, 0.8), rgba(77, 181, 255, 0.6));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 
@@ -112,7 +114,7 @@ header {
 .scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 4.5rem;
+    bottom: 3rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
@@ -126,7 +128,7 @@ header {
     height: 0px;
     transform: rotate(90deg);
     right: -1.5rem;
-    bottom: 17.5px;
+    bottom: 18px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -148,25 +150,27 @@ header {
         display: none;
     }
 
-    .my__photo{
+    .my__photo {
         margin-bottom: 6rem;
         margin-top: 2rem;
         width: 30rem;
         height: 35rem;
     }
 
-    .my__background{
+    .my__background {
         height: 40rem;
     }
-    .my-name{
+
+    .my-name {
         top: 32rem;
         left: 8rem;
     }
 
-    .my-name h4{
+    .my-name h4 {
         font-size: 3rem;
     }
-    .last-name{
+
+    .last-name {
         top: 4rem;
         left: 6rem;
     }
