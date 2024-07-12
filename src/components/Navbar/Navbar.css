@@ -1,5 +1,5 @@
 nav {
-    background: rgba(25, 24, 96, 0.32);
+    background: var(--color-background-nav);
     width: max-content;
     padding: 0.4rem 1.4rem;
     position: fixed;
@@ -39,6 +39,6 @@ nav button:hover {
 }
 
 nav a.active {
-    background: #4c60e069;
+    background: var(--color-background-nav-icon-active);
     color: var(--color-white);
 }

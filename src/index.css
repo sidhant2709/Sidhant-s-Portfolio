@@ -28,12 +28,10 @@
   --color-white: #fff; */
 
   --transition: all 400ms ease;
-
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
-
 .dark-theme {
   --color-bg: #0b0b14;
   --color-bg-variant: #2c2c6c;
@@ -41,14 +39,22 @@
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-light: rgba(255, 255, 255, 0.6);
   --color-white: #fff;
+  --color-background-nav: rgba(25, 24, 96, 0.32);
+  --color-background-nav-icon-active: #4c60e069;
+  --color-name-morphism: rgba(77, 181, 255, 0.5);
+  --color-name-morphism-box: rgba(31, 38, 135, 0.37);
 }
 .light-theme {
-  --color-bg: #d1d1df;
-  --color-bg-variant: #141415;
-  --color-primary: #1f0300;
-  --color-primary-variant: rgba(2, 18, 29, 0.4);
-  --color-light: rgba(24, 3, 0, 0.681);
-  --color-white: rgb(0, 0, 0);
+  --color-bg: #fff8e1;
+  --color-bg-variant: #ffecb3;
+  --color-primary: #ff9800;
+  --color-primary-variant: rgba(41, 41, 40, 0.4);
+  --color-light: rgba(29, 29, 29, 1);
+  --color-white: #757575;
+  --color-background-nav: rgba(153, 173, 39, 0.32);
+  --color-background-nav-icon-active: #f1a007b9;
+  --color-name-morphism: rgba(240, 201, 29, 0.5);
+  --color-name-morphism-box: rgba(240, 201, 29, 0.37);
 }
 
 html {
@@ -64,7 +70,11 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
+  /* background-image: url(../src/assets/bg-texture.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center; */
+  transition: all 800ms ease;
 }
 
 /* =======================================GENERAL STYLES============================================== */

@@ -16,12 +16,7 @@ const App = () => {
   const [theme, setTheme] = useState(getStorageTheme());
 
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
   };
 
   useEffect(() => {
@@ -34,7 +29,7 @@ const App = () => {
       <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
+        loaded={() => {}}
         options={{
           fpsLimit: 120,
           interactivity: {
@@ -64,7 +59,7 @@ const App = () => {
               value: "#151531",
             },
             links: {
-              color: "#151531",
+              color: `${theme === "dark-theme" ? "#2c2c6c" : "#ff9800"}`,
               distance: 150,
               enable: true,
               opacity: 0.7,
@@ -86,7 +81,7 @@ const App = () => {
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 3000,
               },
               value: 80,
             },
@@ -104,7 +99,7 @@ const App = () => {
         }}
       />
       <Navbar theme={theme} setTheme={setTheme} />
-      <Header />
+      <Header theme={theme} />
       <About />
       <Experience />
       <Services />
