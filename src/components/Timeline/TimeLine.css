@@ -1,0 +1,47 @@
+.vertical-timeline-element-icon{
+    background-color: #f8f9fa;
+}
+
+.vertical-timeline-element-icon svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    border-radius: 50%;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 0 !important;
+    border-radius: 1rem;
+}
+
+.title__styles{
+    height: 5rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.1);
+}
+
+.title__styles-logo{
+    width: 35%;
+}
+
+.details__styles{
+    padding: 1rem;
+}
+
+.details__styles h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(29, 29, 29, 1);
+}
+
+.details__styles p{
+    font-size: 1rem;
+    color: rgba(29, 29, 29, 0.7);
+}

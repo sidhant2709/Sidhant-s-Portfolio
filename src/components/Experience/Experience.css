@@ -1,0 +1,27 @@
+#experience {
+    border: 0.5px solid transparent;
+    height: max-content;
+}
+
+.experience-title h5 {
+    margin-top: 6rem;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.experience-title h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 4rem;
+}
+
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div{
+    border-radius: 2rem;
+    transition: var(--transition);
+}

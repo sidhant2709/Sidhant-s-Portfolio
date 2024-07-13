@@ -35,6 +35,21 @@ const About = () => {
               <h5>Projects</h5>
               <small>2+ Years Working</small>
             </article>
+            <article className="about__card">
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>2+ Years Working</small>
+            </article>
+            <article className="about__card">
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>2+ Years Working</small>
+            </article>
+            <article className="about__card">
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>2+ Years Working</small>
+            </article>
           </div>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
