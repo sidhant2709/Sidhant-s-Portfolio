@@ -1,13 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { useSetAtom } from "jotai";
-import { useAtomValue } from "jotai";
 import { uiAtom } from "../../state";
 import "./TimelineModal.css";
 
 const TimelineModal = () => {
   const setUi = useSetAtom(uiAtom);
   const modalRef = useRef(null);
-  const ui = useAtomValue(uiAtom);
 
   const closeModal = () => {
     setUi((prev) => ({
