@@ -41,7 +41,7 @@ const TimelineModal = () => {
         <p>
           The FitnessGram Pacer Test is a multistage aerobic capacity test that
           progressively gets more difficult as it continues. The running speed
-          starts slowly, but gets faster each minute after you hear this signal.
+          starts slowly, but gets faster each minute signal.
         </p>
       </div>
     </div>
