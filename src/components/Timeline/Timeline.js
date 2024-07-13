@@ -8,6 +8,8 @@ import { ReactComponent as GlIcon } from "../../assets/globallogic_logo_orange.s
 import { ReactComponent as GlLogo } from "../../assets/globallogic_logo.svg";
 import { ReactComponent as IcimsLogo } from "../../assets/icims_logo.svg";
 import { ReactComponent as IcimsIcon } from "../../assets/icims_icon.svg";
+import { ReactComponent as CogniLogo } from "../../assets/cognizant_logo.svg";
+import { ReactComponent as CogniIcon } from "../../assets/cognizant_icon.svg";
 import "./TimeLine.css";
 
 let timelineElements = [
@@ -40,28 +42,15 @@ let timelineElements = [
   {
     id: 3,
     title: {
-      company: <GlLogo />,
-      background: "#414042",
+      company: <CogniLogo />,
+      background: "#FFFFFF",
     },
     location: "Hyderabad, India",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
     buttonText: "View Frontend Projects",
     date: "August 2016 - present",
-    icon: <GlIcon />,
-  },
-  {
-    id: 4,
-    title: {
-      company: <GlLogo />,
-      background: "#414042",
-    },
-    location: "Hyderabad, India",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
-    date: "August 2016 - present",
-    icon: <GlIcon />,
+    icon: <CogniIcon />,
   },
 ];
 
