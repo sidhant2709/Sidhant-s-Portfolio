@@ -25,9 +25,7 @@ let timelineElements = [
       width: "30%",
     },
     location: "Hyderabad, India",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
+    designation: "Software Engineer",
     date: "August 2016 - present",
     icon: <IcimsIcon />,
   },
@@ -39,9 +37,7 @@ let timelineElements = [
       width: "40%",
     },
     location: "Hyderabad, India",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
+    designation: "Software Engineer",
     date: "August 2016 - present",
     icon: <GlIcon />,
   },
@@ -53,9 +49,7 @@ let timelineElements = [
       width: "50%",
     },
     location: "Kolkata, India",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
+    designation: "Program Analyst",
     date: "August 2016 - present",
     icon: <CogniIcon />,
   },
@@ -90,8 +84,8 @@ const Timeline = () => {
               </div>
               <div id="details" className="details__styles">
                 <h5>{element.location}</h5>
-                <p>{element.description}</p>
-                <button onClick={() => handleClick(element.id)}>Toggle Modal</button>
+                <h6>{element.designation}</h6>
+                <button onClick={() => handleClick(element.id)}>more...</button>
                 <Overlays isOpen={ui.modal.id === element.id} />
               </div>
             </VerticalTimelineElement>
