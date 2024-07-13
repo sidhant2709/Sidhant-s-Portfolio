@@ -1,4 +1,8 @@
 import React from "react";
+import { useSetAtom } from "jotai";
+import { useAtomValue } from "jotai";
+import { uiAtom } from "../../state";
+import Overlays from "../Overlays/Overlays";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -18,6 +22,7 @@ let timelineElements = [
     title: {
       company: <IcimsLogo />,
       background: "#FFFFFF",
+      width: "30%",
     },
     location: "Hyderabad, India",
     description:
@@ -31,6 +36,7 @@ let timelineElements = [
     title: {
       company: <GlLogo />,
       background: "#414042",
+      width: "40%",
     },
     location: "Hyderabad, India",
     description:
@@ -44,8 +50,9 @@ let timelineElements = [
     title: {
       company: <CogniLogo />,
       background: "#FFFFFF",
+      width: "50%",
     },
-    location: "Hyderabad, India",
+    location: "Kolkata, India",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
     buttonText: "View Frontend Projects",
@@ -55,27 +62,43 @@ let timelineElements = [
 ];
 
 const Timeline = () => {
+  const setUi = useSetAtom(uiAtom);
+  const ui = useAtomValue(uiAtom);
+  const handleClick = (id) => {
+    setUi((prev) => ({
+      ...prev,
+      modal:{
+        open: true,
+        id: id,
+      },
+    }));
+  }
+
   return (
-    <VerticalTimeline>
-      {timelineElements.map((element) => {
-        return (
-          <VerticalTimelineElement
-            key={element.id}
-            date={element.date}
-            dateClassName="date"
-            icon={element.icon}
-          >
-            <div style={{ backgroundColor: element.title.background }} className="title__styles">
-              <div className="title__styles-logo">{element.title.company}</div>
-            </div>
-            <div id="details" className="details__styles">
-              <h5>{element.location}</h5>
-              <p>{element.description}</p>
-            </div>
-          </VerticalTimelineElement>
-        );
-      })}
-    </VerticalTimeline>
+    <>
+      <VerticalTimeline>
+        {timelineElements.map((element) => {
+          return (
+            <VerticalTimelineElement
+              key={element.id}
+              date={element.date}
+              dateClassName="date"
+              icon={element.icon}
+            >
+              <div style={{ backgroundColor: element.title.background }} className="title__styles">
+                <div style={{width: element.title.width}}>{element.title.company}</div>
+              </div>
+              <div id="details" className="details__styles">
+                <h5>{element.location}</h5>
+                <p>{element.description}</p>
+                <button onClick={() => handleClick(element.id)}>Toggle Modal</button>
+                <Overlays isOpen={ui.modal.id === element.id} />
+              </div>
+            </VerticalTimelineElement>
+          );
+        })}
+      </VerticalTimeline>
+    </>
   );
 };
 

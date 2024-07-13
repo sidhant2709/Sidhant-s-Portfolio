@@ -12,6 +12,7 @@ import { getStorageTheme } from "./utils/theme";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
+
 const App = () => {
   const [theme, setTheme] = useState(getStorageTheme());
 
@@ -98,6 +99,7 @@ const App = () => {
           detectRetina: true,
         }}
       />
+
       <Navbar theme={theme} setTheme={setTheme} />
       <Header theme={theme} />
       <About />
