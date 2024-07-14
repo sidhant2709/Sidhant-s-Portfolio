@@ -3,8 +3,8 @@ import TimelineModal from "../TimelineModal/TimelineModal";
 
 const mountElement = document.getElementById("overlays");
 
-const Overlays = ({ isOpen }) => {
+const Overlays = ({ isOpen, details }) => {
   if (!isOpen) return null;
-  return createPortal(<TimelineModal />, mountElement);
+  return createPortal(<TimelineModal details={details} />, mountElement);
 };
 export default Overlays;

@@ -3,7 +3,7 @@ import { useSetAtom } from "jotai";
 import { uiAtom } from "../../state";
 import "./TimelineModal.css";
 
-const TimelineModal = () => {
+const TimelineModal = ({details}) => {
   const setUi = useSetAtom(uiAtom);
   const modalRef = useRef(null);
 
@@ -23,6 +23,8 @@ const TimelineModal = () => {
     }
   };
 
+  console.log(details)
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
@@ -34,15 +36,19 @@ const TimelineModal = () => {
   return (
     <div className="modal">
       <div className="modal-content" ref={modalRef}>
-        <button className="close-btn" onClick={closeModal}>
+        {/* <button className="close-btn" onClick={closeModal}>
           &times;
-        </button>
-        <h2>Modal</h2>
-        <p>
-          The FitnessGram Pacer Test is a multistage aerobic capacity test that
-          progressively gets more difficult as it continues. The running speed
-          starts slowly, but gets faster each minute signal.
-        </p>
+        </button> */}
+        <div style={{ backgroundColor: details.title.background }} className='modal-content__header'>
+          <div style={{width: details.title.width}}>{details.title.company}</div>
+        </div>
+        <div>
+          <p>
+            The FitnessGram Pacer Test is a multistage aerobic capacity test that
+            progressively gets more difficult as it continues. The running speed
+            starts slowly, but gets faster each minute signal.
+          </p>
+        </div>
       </div>
     </div>
   );

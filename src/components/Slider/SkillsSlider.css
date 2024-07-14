@@ -1,0 +1,67 @@
+/* .mainContainer {
+    border: 1px solid #000;
+} */
+
+.slick-slide {
+    width: 250px !important;
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.mainContainer .slider-container {
+    width: 250px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* background-color: #fff !important; */
+    padding: 0.5rem 0rem !important;
+}
+
+.mainContainer .slider-container img {
+    width: 30%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+/* ===========================MEDIA QUERIES (MEDIUM DEVICES)==================================== */
+
+@media screen and (max-width: 1024px) {
+    .slick-slide {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .mainContainer .slider-container {
+        width: 300px !important;
+    }
+}
+
+/* ===========================MEDIA QUERIES (SMALL DEVICES)==================================== */
+
+@media screen and (max-width: 600px) {
+    .slick-slide {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .mainContainer .slider-container {
+        width: 200px !important;
+    }
+}
+
+/* ===========================MEDIA QUERIES (400px)==================================== */
+
+@media screen and (max-width: 450px) {
+    .slick-slide {
+        width: 80px !important;
+        height: 120px !important;
+    }
+
+    .mainContainer .slider-container {
+        width: 200px !important;
+    }
+}

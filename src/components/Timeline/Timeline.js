@@ -86,7 +86,7 @@ const Timeline = () => {
                 <h5>{element.location}</h5>
                 <h6>{element.designation}</h6>
                 <button onClick={() => handleClick(element.id)}>more...</button>
-                <Overlays isOpen={ui.modal.id === element.id} />
+                <Overlays isOpen={ui.modal.id === element.id} details={element}/>
               </div>
             </VerticalTimelineElement>
           );
