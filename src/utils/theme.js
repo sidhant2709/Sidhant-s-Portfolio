@@ -1,5 +1,5 @@
 export const getStorageTheme = () => {
-  let theme = "dark-theme";
+  let theme = "light-theme";
   if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme");
   }

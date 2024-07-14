@@ -28,6 +28,9 @@ let timelineElements = [
     designation: "Software Engineer",
     date: "August 2016 - present",
     icon: <IcimsIcon />,
+    description: {
+      logoWidth: "10%",
+    }
   },
   {
     id: 2,
@@ -40,6 +43,9 @@ let timelineElements = [
     designation: "Software Engineer",
     date: "August 2016 - present",
     icon: <GlIcon />,
+    description: {
+      logoWidth: "20%",
+    }
   },
   {
     id: 3,
@@ -52,6 +58,9 @@ let timelineElements = [
     designation: "Program Analyst",
     date: "August 2016 - present",
     icon: <CogniIcon />,
+    description: {
+      logoWidth: "20%",
+    }
   },
 ];
 

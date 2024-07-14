@@ -42,6 +42,9 @@
   --color-background-nav-icon-active: #4c60e069;
   --color-name-morphism: rgba(77, 181, 255, 0.5);
   --color-name-morphism-box: rgba(31, 38, 135, 0.37);
+  --color-skill-slider-bg: rgba( 74, 144, 226, 0.25 );
+  --color-skill-slider-shadow: rgba( 31, 38, 135, 0.37 );
+  --skill-bg: transparent;
 }
 .light-theme {
   --color-bg: #fff8e1;
@@ -50,10 +53,17 @@
   --color-primary-variant: rgba(240, 240, 71, 0.4);
   --color-light: rgba(29, 29, 29, 1);
   --color-white: #757575;
+
   --color-background-nav: rgba(153, 173, 39, 0.32);
   --color-background-nav-icon-active: #f1a007b9;
+
   --color-name-morphism: rgba(240, 201, 29, 0.5);
   --color-name-morphism-box: rgba(240, 201, 29, 0.37);
+
+  --color-skill-slider-bg: rgba(153, 173, 39, 0.32);
+  --color-skill-slider-shadow: rgba(240, 201, 29, 0.5);
+
+  --skill-bg: transparent;
 }
 
 html {
@@ -62,6 +72,10 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 body {
