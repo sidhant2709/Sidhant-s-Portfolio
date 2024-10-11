@@ -1,7 +1,7 @@
 import React from "react";
 import "./Experience.css";
 import Timeline from "../Timeline/Timeline";
-import SkillsSlider from "../Slider/SkillsSlider";
+// import SkillsSlider from "../Slider/SkillsSlider";
 import SkillsCloud from "../SkillsCloud/SkillsCloud";
 
 const slugs = [
